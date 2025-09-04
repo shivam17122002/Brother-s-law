@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Brother's Law</title>
+    <meta name="description"
+        content="Brother’s Law explains why when you search for something, you find everything except what you actually need. Examples, reasoning, and solutions.">
+    <meta name="keywords" content="brothers law, Murphy's law, funny laws, search paradox, memory law">
+    <meta name="author" content="Shivam Pandey">
+    <link rel="icon" type="image/png" href="rowData(brother;s law)/Law-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500 font-sans">
+    <header
+        class="bg-white/80 dark:bg-gray-800/80 backdrop-blur p-4 md:p-6 flex items-center justify-between fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <a href="index.html" class="flex items-center gap-2">
+            <img src="rowData(brother;s law)/Law-icon.png" alt="logo" class="h-8 w-8 object-contain">
+            <span class="text-xl md:text-2xl font-extrabold text-blue-600 dark:text-blue-400">Brother’s-Law</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6">
+            <a href="index.html" class="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition">Home</a>
+            <a href="FAQs.html" class="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition">FAQs</a>
+            <a href="contactUs.html"
+                class="font-semibold hover:text-green-600 dark:hover:text-green-400 transition">Contact us</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+            <button id="theme-toggle" aria-label="Toggle theme"
+                class="w-12 h-6 rounded-full bg-gray-300 dark:bg-gray-600 relative transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <div id="dot" class="w-4 h-4 bg-white rounded-full absolute top-1 left-1 transition-all duration-300">
+                </div>
+            </button>
+            <button id="menu-btn"
+                class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-controls="mobile-nav" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- <nav id="mobile-nav"
+            class="md:hidden hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-800 shadow-sm border-t border-gray-200 dark:border-gray-700">
+            <ul class="p-3 space-y-1">
+                <li><a href="index.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Home</a></li>
+                <li><a href="FAQs.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">FAQs</a></li>
+                <li><a href="contactUs.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Contact</a></li>
+            </ul>
+        </nav> -->
+
+        <nav id="mobile-nav"
+            class="md:hidden hidden absolute top-full right-0 bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 w-[70%] max-w-xs rounded-xl mt-2">
+            <ul class="p-3 space-y-1">
+                <li><a href="index.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">Home</a>
+                </li>
+                <li><a href="FAQs.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">FAQs</a>
+                </li>
+                <li><a href="contactUs.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-28 md:pt-32 pb-12 px-4 md:px-6 max-w-5xl mx-auto">
+        <section class="mb-10">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-3">What is Brother’s Law?</h1>
+            <p class="text-lg text-gray-700 dark:text-gray-300">It’s a tongue-in-cheek observation about how we often
+                find everything except what we’re looking for — in drawers, in notes, and on the internet. This site
+                documents the law, gives examples, and suggests ways to beat it.</p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <article
+                class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow">
+                <h2 class="text-xl md:text-2xl font-bold mb-2">Mission</h2>
+                <p class="text-gray-700 dark:text-gray-300">Make people smile and also think about better search habits,
+                    calmer recall, and cleaner organization.</p>
+            </article>
+            <article
+                class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow">
+                <h2 class="text-xl md:text-2xl font-bold mb-2">How to Use</h2>
+                <ul class="list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-300">
+                    <li>Start at the Home page for the definition and examples.</li>
+                    <li>Visit FAQs for quick answers.</li>
+                    <li>Share your story via the form — we might feature anonymized highlights.</li>
+                </ul>
+            </article>
+            <article
+                class="md:col-span-2 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-900 border border-blue-200/60 dark:border-gray-700 rounded-2xl p-6 shadow">
+                <h2 class="text-xl md:text-2xl font-bold mb-2">Credits</h2>
+                <p class="text-gray-700 dark:text-gray-300">This Website Created by <span class="font-semibold">Shivam
+                        Pandey</span>
+                    with helpful inputs in idea to implemente Brother’s-Law from <span class="font-semibold">Mayank
+                        Dubey</span>. Built with Tailwind CSS
+                    and a sprinkle of JavaScript.</p>
+            </article>
+        </section>
+
+        <section class="mt-10">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Team</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div
+                    class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow flex items-center gap-4">
+                    <img src="rowData(brother;s law)/Shivam.png" alt="Shivam Pandey"
+                        class="w-16 h-16 rounded-full ring-2 ring-orange-300 dark:ring-orange-500">
+                    <div>
+                        <h3 class="text-lg font-semibold">Shivam Pandey</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Student & creator of Brother’s Law.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow flex items-center gap-4">
+                    <img src="rowData(brother;s law)/mayank.png" alt="Mayank Dubey"
+                        class="w-16 h-16 rounded-full ring-2 ring-yellow-300 dark:ring-yellow-500">
+                    <div>
+                        <h3 class="text-lg font-semibold">Mayank Dubey</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Data Analytics professional; ideas & review.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="text-center text-gray-600 dark:text-gray-400 text-xs p-4 border-t border-gray-200 dark:border-gray-700">
+        &copy; 2025 <span class="font-semibold text-blue-500 dark:text-blue-400">Brother’s-Law</span>. All rights
+        reserved.
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

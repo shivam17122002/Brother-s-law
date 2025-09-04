@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brother's Law</title>
+
+
+    <meta name="description"
+        content="Brother’s Law explains why when you search for something, you find everything except what you actually need. Examples, reasoning, and solutions.">
+    <meta name="keywords" content="brothers law, Murphy's law, funny laws, search paradox, memory law">
+    <meta name="author" content="Shivam Pandey">
+    <link rel="icon" type="image/png" href="rowData(brother;s law)/Law-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500 font-sans">
+    <!-- Loading -->
+    <div id="skeleton-layer"
+        class="fixed inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-800 animate-pulse z-50">
+        <span class="text-2xl font-bold text-gray-700 dark:text-gray-200">Loading...</span>
+    </div>
+
+    <div id="content" class="hidden">
+        <!-- Header -->
+        <header
+            class="bg-white/80 dark:bg-gray-800/80 backdrop-blur p-4 md:p-6 flex items-center justify-between fixed top-0 left-0 right-0 z-50 shadow-sm">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="rowData(brother;s law)/Law-icon.png" alt="Brother's Law logo" class="h-8 w-8 object-contain">
+                <span class="text-xl md:text-2xl font-extrabold text-blue-600 dark:text-blue-400">Brother’s-Law</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="index.html"
+                    class="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition">Home</a>
+                <a href="FAQs.html"
+                    class="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition">FAQs</a>
+                <a href="about.html" class="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition">About
+                    us</a>
+                <a href="contactUs.html"
+                    class="font-semibold hover:text-green-600 dark:hover:text-green-400 transition">Contact us</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <!-- Theme toggle -->
+                <button id="theme-toggle" aria-label="Toggle theme"
+                    class="w-12 h-6 rounded-full bg-gray-300 dark:bg-gray-600 relative transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <div id="dot"
+                        class="w-4 h-4 bg-white rounded-full absolute top-1 left-1 transition-all duration-300"></div>
+                </button>
+
+                <!-- Mobile menu button -->
+                <button id="menu-btn"
+                    class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    aria-controls="mobile-nav" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav id="mobile-nav"
+                class="md:hidden hidden absolute top-full right-0 mt-2 w-[70%] max-w-xs bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 rounded-xl z-50">
+                <ul class="p-3 space-y-2">
+                    <li>
+                        <a href="index.html"
+                            class="block px-4 py-2 rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="FAQs.html"
+                            class="block px-4 py-2 rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="block px-4 py-2 rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html"
+                            class="block px-4 py-2 rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- HERO -->
+        <main
+            class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-28 md:pt-32 pb-16 md:pb-20">
+            <div class="container mx-auto px-4 md:px-6 text-center relative z-10">
+                <span
+                    class="inline-block px-4 py-1 mb-6 text-sm font-semibold tracking-wider text-blue-700 uppercase bg-blue-100 rounded-full dark:text-blue-300 dark:bg-blue-900/40">Official
+                    Statement</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Brother’s Law</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">A principle
+                    observed by all, simple yet profound:</p>
+                <blockquote
+                    class="mt-8 max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-xl rounded-2xl px-6 md:px-8 py-8 md:py-10 relative border-l-8 border-blue-600 dark:border-blue-400">
+                    <p class="text-2xl md:text-3xl font-semibold italic">“When you search for something, you’ll find
+                        everything except the thing you’re looking for.”</p>
+                    <span class="block mt-4 text-sm font-medium text-gray-500 dark:text-gray-400">— Brother’s Law,
+                        2025</span>
+                </blockquote>
+            </div>
+            <div
+                class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.15),transparent_60%)]">
+            </div>
+        </main>
+
+        <!-- EXAMPLES -->
+        <section class="container mx-auto px-4 md:px-6 py-8">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-600 dark:text-blue-400">Practical Examples</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border-l-8 border-blue-600 dark:border-blue-400 p-6 hover:scale-[1.02] transition">
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Lost Keys</h3>
+                    <p class="text-gray-700 dark:text-gray-300">You'll find your old report card and a missing sock, but
+                        not your keys, which were in your pocket all along.</p>
+                </div>
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border-l-8 border-green-500 dark:border-green-400 p-6 hover:scale-[1.02] transition">
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Academic Concepts</h3>
+                    <p class="text-gray-700 dark:text-gray-300">During an exam, your mind offers everything except the
+                        concept you actually need.</p>
+                </div>
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border-l-8 border-purple-500 dark:border-purple-400 p-6 hover:scale-[1.02] transition">
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">A Specific Quote</h3>
+                    <p class="text-gray-700 dark:text-gray-300">You find an entire movie script analysis, but the quote
+                        you wanted hides on page 3 of the results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REASON & SOLUTION -->
+        <section id="reason"
+            class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 px-4 md:px-6 py-10">
+            <article
+                class="bg-gradient-to-br from-blue-50 to-red-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow p-6 md:p-8 text-center border-2 border-transparent hover:border-red-300 transition">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-blue-600 dark:text-blue-400">Reason Behind
+                </h2>
+                <p class="text-base md:text-lg text-gray-700 dark:text-gray-300">Memory retrieval suffers from
+                    <b>proactive interference</b>: older neural traces overlap with current cues. Under stress, the
+                    hippocampus activates related past patterns first, delaying access to the intended memory.
+                </p>
+            </article>
+            <article id="solution"
+                class="bg-gradient-to-br from-green-50 to-green-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow p-6 md:p-8 text-center border-2 border-transparent hover:border-green-300 transition">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-blue-600 dark:text-blue-400">The Solution
+                </h2>
+                <p class="text-base md:text-lg text-gray-700 dark:text-gray-300">Stay calm and reduce stress. A relaxed
+                    mind restores prefrontal control and lets the hippocampus retrieve the right memory. Spaced recall
+                    and mindful focus strengthen accurate access.</p>
+            </article>
+        </section>
+
+        <!-- ABOUT CARD TEASER -->
+        <section id="about"
+            class="container mx-auto px-4 md:px-6 py-10 shadow bg-gradient-to-br from-blue-50 via-white to-blue-200 dark:from-gray-700/40">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-center">About the Owners</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center">
+                <div
+                    class="bg-gradient-to-br from-blue-50 to-orange-200 dark:from-gray-800 dark:to-gray-900 rounded-3xl shadow p-8 text-center max-w-xs hover:-translate-y-1 hover:shadow-2xl transition">
+                    <img src="rowData(brother;s law)/Shivam.png" alt="Shivam Pandey"
+                        class="rounded-full w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 ring-2 ring-orange-300 dark:ring-orange-500 shadow-md">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-orange-600 dark:text-orange-400">Shivam
+                        Pandey</h3>
+                    <p class="text-gray-700 dark:text-gray-300">Student observer of the law. This site shares examples
+                        and explores the reasoning.</p>
+                </div>
+                <div
+                    class="bg-gradient-to-br from-green-50 to-yellow-200 dark:from-gray-800 dark:to-gray-900 rounded-3xl shadow p-8 text-center max-w-xs hover:-translate-y-1 hover:shadow-2xl transition">
+                    <img src="rowData(brother;s law)/mayank.png" alt="Mayank Dubey"
+                        class="rounded-full w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 ring-2 ring-yellow-200 dark:ring-yellow-500 shadow-md">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-yellow-600 dark:text-yellow-400">Mayank Dubey
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300">Works in Data Analytics. Suggested this website idea and
+                        refined the law.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEEDBACK -->
+        <!-- Brothers' Laws — modern blue cards -->
+        <section class="max-w-6xl mx-auto px-4 md:px-6 py-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-600 mb-6 text-center">Universal Laws</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card template (repeat for each law) -->
+                <article
+                    class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-transparent hover:shadow-2xl transition p-6 overflow-hidden">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                                <img src="https://avatar.iran.liara.run/public/1" alt="avatar" loading="eager"
+                                    class="author_avatar" />
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Murphy's Law</h3>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 italic">"Anything that can go wrong,
+                                will go wrong."</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 space-y-3 text-sm">
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">Lesson</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">Life is inherently unpredictable, so it's
+                                crucial to anticipate potential problems and have backup plans to mitigate their impact.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">How to live by it</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">When planning something, like an outdoor
+                                event, assume the worst-case scenario and have a contingency plan ready.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-transparent hover:shadow-2xl transition p-6 overflow-hidden">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                                <img src="https://avatar.iran.liara.run/public/2" alt="avatar" loading="eager"
+                                    class="author_avatar" />
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Kidlin's Law</h3>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 italic">"If you can write the
+                                problem down clearly, then the matter is half solved."</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 space-y-3 text-sm">
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">Lesson</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">Clarity in problem definition is essential
+                                for finding solutions.</p>
+                        </div>
+
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">How to live by it</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">Articulate your problems clearly in writing
+                                to uncover solutions that might not have been obvious at first glance.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-transparent hover:shadow-2xl transition p-6 overflow-hidden">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                                <img src="https://avatar.iran.liara.run/public/3" alt="avatar" loading="eager"
+                                    class="author_avatar" />
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Gilbert's Law</h3>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 italic">"The biggest problem at work
+                                is that no one tells you what to do."</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 space-y-3 text-sm">
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">Lesson</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">At work, you're expected to be proactive
+                                and find the best ways to achieve desired results.</p>
+                        </div>
+
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">How to live by it</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">Take initiative in your tasks and don't
+                                wait for explicit instructions; seek clarity and find the best ways to provide results.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-transparent hover:shadow-2xl transition p-6 overflow-hidden">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                                <img src="https://avatar.iran.liara.run/public/4" alt="avatar" loading="eager"
+                                    class="author_avatar" />
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Walson's Law</h3>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 italic">"If you put information and
+                                intelligence first at all times, then the money will come."</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 space-y-3 text-sm">
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">Lesson</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">Prioritizing knowledge and understanding
+                                real-time dynamics gives you an advantage in seizing opportunities.</p>
+                        </div>
+
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">How to live by it</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">Invest in learning and understanding, as
+                                this will naturally lead to financial success and better opportunities.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-transparent hover:shadow-2xl transition p-6 overflow-hidden">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                                <img src="https://avatar.iran.liara.run/public/5" alt="avatar" loading="eager"
+                                    class="author_avatar" />
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Falkland's Law</h3>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 italic">"When you don't have to make
+                                a decision, don't make a decision."</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 space-y-3 text-sm">
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">Lesson</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">Rushing to make decisions can be
+                                counterproductive; it's often better to wait for more information.</p>
+                        </div>
+
+                        <div>
+                            <strong class="text-xs uppercase tracking-wide text-gray-500">How to live by it</strong>
+                            <p class="mt-1 text-gray-700 dark:text-gray-200">Postpone decisions when possible,
+                                especially when they aren't immediately necessary, to avoid overthinking and allow for
+                                more clarity.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer
+            class="bg-gradient-to-r from-blue-50 via-blue-100 to-blue-200 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 pt-8 pb-6 px-6 mt-8">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <img src="rowData(brother;s law)/Law-icon.png" alt="logo" class="h-5">
+                        <h1 class="text-base font-extrabold text-blue-700 dark:text-blue-300">Brother’s-Law</h1>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm">This website explores the newly discovered law,
+                        its reasoning, and practical examples.</p>
+                </div>
+                <div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-3 text-blue-500">Quick Links</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#reason" class="hover:text-blue-600 transition">➜ Reason</a></li>
+                            <li><a href="#solution" class="hover:text-blue-600 transition">➜ Solution</a></li>
+                            <li><a href="about.html" class="hover:text-blue-600 transition">➜ About</a></li>
+                            <li><a href="contactUs.html" class="hover:text-green-600 transition">➜ Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-3 text-blue-500">Contact</h3>
+                        <ul class="space-y-2 text-sm">
+                            <a href="mailto:shivmpandey02@gmail.com"
+                                class="block flex items-center gap-2 hover:text-blue-600 transition">
+                                <img src="rowData(brother;s law)/mai-Icone.png" alt="email" class="h-5">
+                                Email
+                            </a>
+
+                            <li>
+                                <a href="https://www.linkedin.com/in/shivmpandey02"
+                                    class="flex items-center gap-2 hover:text-blue-600 transition">
+                                    <img src="rowData(brother;s law)/linkIcon.png" alt="linkedin" class="h-5"> Linkedin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/shivam17122002"
+                                    class="flex items-center gap-2 hover:text-blue-600 transition">
+                                    <img src="rowData(brother;s law)/github-logo.svg" alt="github" class="h-5"> Github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/its_shivam7838"
+                                    class="flex items-center gap-2 hover:text-blue-600 transition">
+                                    <img src="rowData(brother;s law)/instagramIcon.svg" alt="instagram" class="h-5">
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-6 border-t border-gray-300 dark:border-gray-700"></div>
+            <p class="text-center text-gray-600 dark:text-gray-400 text-xs">&copy; 2025 <span
+                    class="font-semibold text-blue-500 dark:text-blue-400">Brother’s-Law</span>. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

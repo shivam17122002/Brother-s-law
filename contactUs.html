@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Brother's Law</title>
+
+    <meta name="description"
+        content="Brother’s Law explains why when you search for something, you find everything except what you actually need. Examples, reasoning, and solutions.">
+    <meta name="keywords" content="brothers law, Murphy's law, funny laws, search paradox, memory law">
+    <meta name="author" content="Shivam Pandey">
+    <link rel="icon" type="image/png" href="rowData(brother;s law)/Law-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header
+        class="bg-white/80 dark:bg-gray-800/80 backdrop-blur p-4 md:p-6 flex items-center justify-between fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <a href="index.html" class="flex items-center gap-2">
+            <img src="rowData(brother;s law)/Law-icon.png" alt="logo" class="h-8 w-8 object-contain">
+            <span class="text-xl md:text-2xl font-extrabold text-blue-600 dark:text-blue-400">Brother’s-Law</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+            <a href="index.html"
+                class="font-semibold dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition">Home</a>
+            <a href="FAQs.html"
+                class="font-semibold dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition">FAQs</a>
+            <a href="about.html"
+                class="font-semibold dark:text-white  hover:text-blue-600 dark:hover:text-blue-400 transition">About
+                us</a>
+        </nav>
+        <button id="menu-btn"
+            class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 dark:text-white"
+            aria-controls="mobile-nav" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <nav id="mobile-nav"
+            class="md:hidden hidden absolute top-full right-0 bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 w-[70%] max-w-xs rounded-xl mt-2">
+            <ul class="p-3 space-y-1">
+                <li><a href="index.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">Home</a>
+                </li>
+                <li><a href="FAQs.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">FAQs</a>
+                </li>
+                <li><a href="about.html"
+                        class="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">About</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow flex items-center justify-center p-4 pt-28 md:pt-32">
+        <div
+            class="w-full max-w-md bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-6 md:p-8 border border-blue-200 dark:border-gray-700 transition">
+
+            <!-- Heading -->
+            <h1 class="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-6 text-center">
+                Contact Us ✨
+            </h1>
+
+            <!-- Contact Form -->
+            <form id="contact-form" class="space-y-5">
+
+                <!-- Name -->
+                <label class="block">
+                    <span class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</span>
+                    <input type="text" name="user_name" required
+                        class="mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-2.5 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+                        placeholder="Enter your name">
+                </label>
+
+                <!-- Email -->
+                <label class="block">
+                    <span class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</span>
+                    <input type="email" name="user_email" required
+                        class="mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-2.5 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+                        placeholder="example@email.com">
+                </label>
+
+                <!-- State -->
+                <label class="block">
+                    <span class="block text-sm font-medium text-gray-700 dark:text-gray-300">State</span>
+                    <input type="text" name="user_state"
+                        class="mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-2.5 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+                        placeholder="Enter your state">
+                </label>
+
+                <!-- Feedback -->
+                <label class="block">
+                    <span class="block text-sm font-medium text-gray-700 dark:text-gray-300">Feedback</span>
+                    <textarea name="message" rows="4" required
+                        class="mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-2.5 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:outline-none transition resize-none"
+                        placeholder="Write your feedback..."></textarea>
+                </label>
+
+                <!-- Submit -->
+                <button type="submit"
+                    class="w-full py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold shadow-md hover:from-blue-600 hover:to-blue-800 active:scale-95 transition">
+                    Send
+                </button>
+            </form>
+        </div>
+    </main>
+
+
+    <footer
+        class="text-center text-gray-600 dark:text-gray-400 text-xs p-4 border-t border-gray-200 dark:border-gray-700">
+        &copy; 2025 <span class="font-semibold text-blue-500 dark:text-blue-400">Brother’s-Law</span>. All rights
+        reserved.
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+            (function () {
+                emailjs.init("2UNFmMn6d_Vi3P7Md"); // replace with your EmailJS Public Key
+            })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_x83ipq8", "template_e61n8ql", this)
+                .then(() => {
+                    alert("✅ Message sent successfully!");
+                    this.reset();
+                }, (err) => {
+                    alert("❌ Error sending: " + JSON.stringify(err));
+                });
+        });
+    </script>
+</body>
+
+</html>
