@@ -30,22 +30,22 @@ The site shares examples, the reasoning behind it, and solutions — while also 
 
 
 ### Homepage(PC)
-![Homepage Screenshot](./screenshots/home.png)
+![Homepage Screenshot](./ScreenShots/PcHome.png)
 
-### About Page  Section  
-![Examples Screenshot](./screenshots/examples.png)
+### About Page Section  
+![Examples Screenshot](./ScreenShots/PcAboutus.png)
 
 ### Contact us Page  
-![Contact Page Screenshot](./screenshots/contact.png)
+![Contact Page Screenshot](./ScreenShots/PcContactus.png)
 
 ### Homepage(Smart Phone)
-![Homepage Screenshot](./screenshots/home.png)
+![Homepage Screenshot](./ScreenShots/PhoneHome.png)
 
-### About Page  Section  
-![Examples Screenshot](./screenshots/examples.png)
+### About Page Section  
+![Examples Screenshot](./ScreenShots/PhoneAboutus.png)
 
 ### Contact us Page  
-![Contact Page Screenshot](./screenshots/contact.png)
+![Contact Page Screenshot](./ScreenShots/PhoneContactus.png)
 
 ---
 
@@ -71,12 +71,20 @@ The site shares examples, the reasoning behind it, and solutions — while also 
 <br/>
 ├── FAQs.html # (Referenced, not provided here)
 <br/>
-├── /rowData(brother;s law)/
-│ ├── Law-icon.png # Site favicon/logo
+├── /Image/
+│ ├── fav.icon # Site favicon/logo
 | <br/>
 │ ├── Shivam.png # Owner Shivam’s profile picture
 |  <br/>
 │ ├── mayank.png # Owner Mayank’s profile picture
+| <br/>
+│ ├── ...icons # Social and contact icons
+├── /ScreenShots/
+│ ├── PcHome.png # ScreenShots of PC home webpage
+| <br/>
+│ ├── PcAboutus.png # ScreenShots of PC About us webpage
+|  <br/>
+│ ├── PcAboutus.png # ScreenShots of PC About us webpage
 | <br/>
 │ ├── ...icons # Social and contact icons
 
