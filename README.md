@@ -8,7 +8,7 @@ The site shares examples, the reasoning behind it, and solutions — while also 
 ---
 ## 🌍 Live Demo
 
-🔗 **[View Demo]([https://brotherslaw.netlify.app/](https://subtle-frangipane-db4ee0.netlify.app/))**  
+🔗 **[View Demo](https://68b8cb7dfbc8f8e1b0fea9f2--brotherslaw.netlify.app/)**  
 
 ## ✨ Features
 
@@ -26,26 +26,29 @@ The site shares examples, the reasoning behind it, and solutions — while also 
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Screenshots(PC)
 
+|     Home     |    About us  |  Contact us  |
+|--------------|--------------|--------------|
 
-### Homepage(PC)
-![Homepage Screenshot](./ScreenShots/PcHome.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="./ScreenShots/PcHome.png" width="300"/>
+  <img src="./ScreenShots/PcAboutus.png" width="300"/>
+  <img src="./ScreenShots/PcContactus.png" width="300"/>
+</div>
 
-### About Page Section  
-![Examples Screenshot](./ScreenShots/PcAboutus.png)
+<br/>
 
-### Contact us Page  
-![Contact Page Screenshot](./ScreenShots/PcContactus.png)
+## 🖼️ Screenshots(Smart Phone)
 
-### Homepage(Smart Phone)
-![Homepage Screenshot](./ScreenShots/PhoneHome.png)
+|     Home     |    About us  |  Contact us  |
+|--------------|--------------|--------------|
 
-### About Page Section  
-![Examples Screenshot](./ScreenShots/PhoneAboutus.png)
-
-### Contact us Page  
-![Contact Page Screenshot](./ScreenShots/PhoneContactus.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="./ScreenShots/phoneHome.png"  height="400"/>
+  <img src="./ScreenShots/phoneAboutus.png" height="400"/>
+  <img src="./ScreenShots/phoneContactus.png" height="400"/>
+</div>
 
 ---
 
@@ -79,6 +82,7 @@ The site shares examples, the reasoning behind it, and solutions — while also 
 │ ├── mayank.png # Owner Mayank’s profile picture
 | <br/>
 │ ├── ...icons # Social and contact icons
+<br/>
 ├── /ScreenShots/
 │ ├── PcHome.png # ScreenShots of PC home webpage
 | <br/>
